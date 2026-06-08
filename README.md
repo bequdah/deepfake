@@ -4,6 +4,16 @@
 
 This repository contains the work for Graduation Project 1, which serves as the foundation for a Multi-Stage Deepfake Detection system with Dual Explainability (GP2).
 
+## Exploratory Data Analysis (EDA)
+
+A full EDA was performed on the dataset to understand the distribution, quality, and characteristics of the images before training.
+
+- Visualized class distributions across Real, GAN, and Diffusion Model images
+- Analyzed image properties (size, color channels, pixel statistics)
+- Explored sample images from each class
+
+📓 Notebook: `EDA/EDA.ipynb`
+
 ## Dataset
 
 - **Total Images:** 52,000
@@ -35,13 +45,15 @@ A binary classification baseline (Real vs Fake) trained on 10,000 images.
 
 ```
 deepfake/
+├── EDA/
+│   └── EDA.ipynb
 └── baseline/
-    ├── baseline.ipynb
+    ├── resnet50_baseline.ipynb
     ├── results/
     │   ├── baseline_curves.png
     │   └── confusion_matrix.png
-    └── models/
-        └── resnet50_baseline.pth (ignored)
+    └── model/
+        └── resnet50_baseline.pth  (not tracked - too large)
 ```
 
 ## GP2 - Coming Soon
