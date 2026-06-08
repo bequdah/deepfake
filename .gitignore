@@ -9,6 +9,10 @@ dataset/
 *.pkl
 *.bin
 
+# Allow results images
+!baseline/results/*.png
+!baseline/results/*.jpg
+
 # =====================
 # Model Weights & Logs
 # =====================
